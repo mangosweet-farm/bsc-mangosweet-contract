@@ -1,2 +1,1 @@
-# bsc-mangosweet-contract
-MangoSweet Token
+Hi Mangosweet team!!!
