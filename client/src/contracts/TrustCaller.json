@@ -110,7 +110,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"caller\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"isTrusted\",\"type\":\"bool\"}],\"name\":\"TrustCallerSet\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"contractAddress\",\"type\":\"address\"}],\"name\":\"isTrustCaller\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"callerAddress\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"isTrusted\",\"type\":\"bool\"}],\"name\":\"setTrustCaller\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/tom/workspace/blockchain/mangosweet.finance/bsc-mangosweet-contract/utils/TrustCaller.sol\":\"TrustCaller\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/tom/workspace/blockchain/mangosweet.finance/bsc-mangosweet-contract/utils/TrustCaller.sol\":{\"keccak256\":\"0x6c270f235ed2c14357907a4411571b594c452fc7763d9ed6ccfe976cf1c2ca06\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://acb925d907585b4e84ac5092d027a447606d02ecd8080bd12f5f4aa772de5235\",\"dweb:/ipfs/QmX5VsV8uJmZ66xwvbUrvvHg5moCZw3frLXZES1Ag753hC\"]},\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0x1cae4f85f114ff17b90414f5da67365b1d00337abb5bce9bf944eb78a2c0673c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d5ff16b336ce8f906478d5f2eecc6435e00833bdc0b92f6b209cf9e92cb5b2b7\",\"dweb:/ipfs/QmRD1rAZEqQ73C33cdA3QoUyBDMEWnNKNMc6PNkAZWHeQQ\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xf930d2df426bfcfc1f7415be724f04081c96f4fb9ec8d0e3a521c07692dface0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fc2bfdea0d2562c76fb3c4cf70a86c6ba25c5a30e8f8515c95aafdf8383f8395\",\"dweb:/ipfs/QmTbFya18786ckJfLYUoWau9jBTKfmWnWm5XSViWvB7PXN\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"caller\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"isTrusted\",\"type\":\"bool\"}],\"name\":\"TrustCallerSet\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"contractAddress\",\"type\":\"address\"}],\"name\":\"isTrustCaller\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"callerAddress\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"isTrusted\",\"type\":\"bool\"}],\"name\":\"setTrustCaller\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/utils/TrustCaller.sol\":\"TrustCaller\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0x6bb804a310218875e89d12c053e94a13a4607cdf7cc2052f3e52bd32a0dc50a1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b2ebbbe6d0011175bd9e7268b83de3f9c2f9d8d4cbfbaef12aff977d7d727163\",\"dweb:/ipfs/Qmd5c7Vxtis9wzkDNhxwc6A2QT5H9xn9kfjhx7qx44vpro\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x95098bd1d9c8dec4d80d3dedb88a0d949fa0d740ee99f2aa466bc308216ca6d5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7fec968dcd68e13961521fa3c7dd87baecad91a2653b19240e81f21cc4f3ba85\",\"dweb:/ipfs/QmaXtsYt4Mphm8XHNUfk2me1cF3ssS2SqDBNFpYAzMjomC\"]},\"project:/utils/TrustCaller.sol\":{\"keccak256\":\"0x6c270f235ed2c14357907a4411571b594c452fc7763d9ed6ccfe976cf1c2ca06\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://acb925d907585b4e84ac5092d027a447606d02ecd8080bd12f5f4aa772de5235\",\"dweb:/ipfs/QmX5VsV8uJmZ66xwvbUrvvHg5moCZw3frLXZES1Ag753hC\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -119,26 +119,26 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\n\n\nabstract contract TrustCaller is Ownable {\n    event TrustCallerSet(address caller, bool isTrusted);\n\n    mapping(address => bool) private _trustCallers;\n\n    constructor() {\n    }\n\n    function isTrustCaller(address contractAddress) external view returns (bool) {\n        return _trustCallers[contractAddress];\n    }\n\n    function setTrustCaller(address callerAddress, bool isTrusted) external onlyOwner {\n        _trustCallers[callerAddress] = isTrusted;\n\n        emit TrustCallerSet(callerAddress, isTrusted);\n    }\n\n    modifier onlyTrustCaller() {\n        require(_trustCallers[msg.sender], \"Caller is not trust\");\n        _;\n    }\n}",
-  "sourcePath": "/Users/tom/workspace/blockchain/mangosweet.finance/bsc-mangosweet-contract/utils/TrustCaller.sol",
+  "sourcePath": "/home/merxer/code/bsc-mangosweet-contract/utils/TrustCaller.sol",
   "ast": {
-    "absolutePath": "/Users/tom/workspace/blockchain/mangosweet.finance/bsc-mangosweet-contract/utils/TrustCaller.sol",
+    "absolutePath": "project:/utils/TrustCaller.sol",
     "exportedSymbols": {
       "Context": [
-        1130
+        773
       ],
       "Ownable": [
-        497
+        103
       ],
       "TrustCaller": [
-        387
+        1138
       ]
     },
-    "id": 388,
+    "id": 1139,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 324,
+        "id": 1075,
         "literals": [
           "solidity",
           "^",
@@ -146,16 +146,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "32:23:4"
+        "src": "32:23:8"
       },
       {
         "absolutePath": "@openzeppelin/contracts/access/Ownable.sol",
         "file": "@openzeppelin/contracts/access/Ownable.sol",
-        "id": 325,
+        "id": 1076,
         "nodeType": "ImportDirective",
-        "scope": 388,
-        "sourceUnit": 498,
-        "src": "57:52:4",
+        "scope": 1139,
+        "sourceUnit": 104,
+        "src": "57:52:8",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -164,50 +164,50 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 326,
+              "id": 1077,
               "name": "Ownable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 497,
-              "src": "145:7:4"
+              "referencedDeclaration": 103,
+              "src": "145:7:8"
             },
-            "id": 327,
+            "id": 1078,
             "nodeType": "InheritanceSpecifier",
-            "src": "145:7:4"
+            "src": "145:7:8"
           }
         ],
         "contractDependencies": [
-          497,
-          1130
+          103,
+          773
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 387,
+        "id": 1138,
         "linearizedBaseContracts": [
-          387,
-          497,
-          1130
+          1138,
+          103,
+          773
         ],
         "name": "TrustCaller",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "anonymous": false,
-            "id": 333,
+            "id": 1084,
             "name": "TrustCallerSet",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 332,
+              "id": 1083,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 329,
+                  "id": 1080,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "caller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 333,
-                  "src": "180:14:4",
+                  "scope": 1084,
+                  "src": "180:14:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -215,10 +215,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 328,
+                    "id": 1079,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "180:7:4",
+                    "src": "180:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -229,13 +229,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 331,
+                  "id": 1082,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "isTrusted",
                   "nodeType": "VariableDeclaration",
-                  "scope": 333,
-                  "src": "196:14:4",
+                  "scope": 1084,
+                  "src": "196:14:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -243,10 +243,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 330,
+                    "id": 1081,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "196:4:4",
+                    "src": "196:4:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -255,18 +255,18 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "179:32:4"
+              "src": "179:32:8"
             },
-            "src": "159:53:4"
+            "src": "159:53:8"
           },
           {
             "constant": false,
-            "id": 337,
+            "id": 1088,
             "mutability": "mutable",
             "name": "_trustCallers",
             "nodeType": "VariableDeclaration",
-            "scope": 387,
-            "src": "218:46:4",
+            "scope": 1138,
+            "src": "218:46:8",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -274,28 +274,28 @@
               "typeString": "mapping(address => bool)"
             },
             "typeName": {
-              "id": 336,
+              "id": 1087,
               "keyType": {
-                "id": 334,
+                "id": 1085,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "226:7:4",
+                "src": "226:7:8",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
               "nodeType": "Mapping",
-              "src": "218:24:4",
+              "src": "218:24:8",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                 "typeString": "mapping(address => bool)"
               },
               "valueType": {
-                "id": 335,
+                "id": 1086,
                 "name": "bool",
                 "nodeType": "ElementaryTypeName",
-                "src": "237:4:4",
+                "src": "237:4:8",
                 "typeDescriptions": {
                   "typeIdentifier": "t_bool",
                   "typeString": "bool"
@@ -306,63 +306,63 @@
           },
           {
             "body": {
-              "id": 340,
+              "id": 1091,
               "nodeType": "Block",
-              "src": "285:7:4",
+              "src": "285:7:8",
               "statements": []
             },
-            "id": 341,
+            "id": 1092,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 338,
+              "id": 1089,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "282:2:4"
+              "src": "282:2:8"
             },
             "returnParameters": {
-              "id": 339,
+              "id": 1090,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "285:0:4"
+              "src": "285:0:8"
             },
-            "scope": 387,
-            "src": "271:21:4",
+            "scope": 1138,
+            "src": "271:21:8",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
             "body": {
-              "id": 352,
+              "id": 1103,
               "nodeType": "Block",
-              "src": "375:54:4",
+              "src": "375:54:8",
               "statements": [
                 {
                   "expression": {
                     "baseExpression": {
-                      "id": 348,
+                      "id": 1099,
                       "name": "_trustCallers",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 337,
-                      "src": "392:13:4",
+                      "referencedDeclaration": 1088,
+                      "src": "392:13:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                         "typeString": "mapping(address => bool)"
                       }
                     },
-                    "id": 350,
+                    "id": 1101,
                     "indexExpression": {
-                      "id": 349,
+                      "id": 1100,
                       "name": "contractAddress",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 343,
-                      "src": "406:15:4",
+                      "referencedDeclaration": 1094,
+                      "src": "406:15:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -373,38 +373,38 @@
                     "isPure": false,
                     "lValueRequested": false,
                     "nodeType": "IndexAccess",
-                    "src": "392:30:4",
+                    "src": "392:30:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 347,
-                  "id": 351,
+                  "functionReturnParameters": 1098,
+                  "id": 1102,
                   "nodeType": "Return",
-                  "src": "385:37:4"
+                  "src": "385:37:8"
                 }
               ]
             },
             "functionSelector": "f24b890d",
-            "id": 353,
+            "id": 1104,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "isTrustCaller",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 344,
+              "id": 1095,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 343,
+                  "id": 1094,
                   "mutability": "mutable",
                   "name": "contractAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 353,
-                  "src": "321:23:4",
+                  "scope": 1104,
+                  "src": "321:23:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -412,10 +412,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 342,
+                    "id": 1093,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "321:7:4",
+                    "src": "321:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -425,20 +425,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "320:25:4"
+              "src": "320:25:8"
             },
             "returnParameters": {
-              "id": 347,
+              "id": 1098,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 346,
+                  "id": 1097,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 353,
-                  "src": "369:4:4",
+                  "scope": 1104,
+                  "src": "369:4:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -446,10 +446,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 345,
+                    "id": 1096,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "369:4:4",
+                    "src": "369:4:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -458,48 +458,48 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "368:6:4"
+              "src": "368:6:8"
             },
-            "scope": 387,
-            "src": "298:131:4",
+            "scope": 1138,
+            "src": "298:131:8",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "body": {
-              "id": 373,
+              "id": 1124,
               "nodeType": "Block",
-              "src": "517:113:4",
+              "src": "517:113:8",
               "statements": [
                 {
                   "expression": {
-                    "id": 366,
+                    "id": 1117,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 362,
+                        "id": 1113,
                         "name": "_trustCallers",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 337,
-                        "src": "527:13:4",
+                        "referencedDeclaration": 1088,
+                        "src": "527:13:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                           "typeString": "mapping(address => bool)"
                         }
                       },
-                      "id": 364,
+                      "id": 1115,
                       "indexExpression": {
-                        "id": 363,
+                        "id": 1114,
                         "name": "callerAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 355,
-                        "src": "541:13:4",
+                        "referencedDeclaration": 1106,
+                        "src": "541:13:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -510,7 +510,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "527:28:4",
+                      "src": "527:28:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -519,49 +519,49 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 365,
+                      "id": 1116,
                       "name": "isTrusted",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 357,
-                      "src": "558:9:4",
+                      "referencedDeclaration": 1108,
+                      "src": "558:9:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "527:40:4",
+                    "src": "527:40:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 367,
+                  "id": 1118,
                   "nodeType": "ExpressionStatement",
-                  "src": "527:40:4"
+                  "src": "527:40:8"
                 },
                 {
                   "eventCall": {
                     "arguments": [
                       {
-                        "id": 369,
+                        "id": 1120,
                         "name": "callerAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 355,
-                        "src": "598:13:4",
+                        "referencedDeclaration": 1106,
+                        "src": "598:13:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         }
                       },
                       {
-                        "id": 370,
+                        "id": 1121,
                         "name": "isTrusted",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 357,
-                        "src": "613:9:4",
+                        "referencedDeclaration": 1108,
+                        "src": "613:9:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -579,18 +579,18 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 368,
+                      "id": 1119,
                       "name": "TrustCallerSet",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 333,
-                      "src": "583:14:4",
+                      "referencedDeclaration": 1084,
+                      "src": "583:14:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_bool_$returns$__$",
                         "typeString": "function (address,bool)"
                       }
                     },
-                    "id": 371,
+                    "id": 1122,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -598,51 +598,51 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "583:40:4",
+                    "src": "583:40:8",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 372,
+                  "id": 1123,
                   "nodeType": "EmitStatement",
-                  "src": "578:45:4"
+                  "src": "578:45:8"
                 }
               ]
             },
             "functionSelector": "0b9bf752",
-            "id": 374,
+            "id": 1125,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 360,
+                "id": 1111,
                 "modifierName": {
-                  "id": 359,
+                  "id": 1110,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 446,
-                  "src": "507:9:4"
+                  "referencedDeclaration": 46,
+                  "src": "507:9:8"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "507:9:4"
+                "src": "507:9:8"
               }
             ],
             "name": "setTrustCaller",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 358,
+              "id": 1109,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 355,
+                  "id": 1106,
                   "mutability": "mutable",
                   "name": "callerAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 374,
-                  "src": "459:21:4",
+                  "scope": 1125,
+                  "src": "459:21:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -650,10 +650,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 354,
+                    "id": 1105,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "459:7:4",
+                    "src": "459:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -664,12 +664,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 357,
+                  "id": 1108,
                   "mutability": "mutable",
                   "name": "isTrusted",
                   "nodeType": "VariableDeclaration",
-                  "scope": 374,
-                  "src": "482:14:4",
+                  "scope": 1125,
+                  "src": "482:14:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -677,10 +677,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 356,
+                    "id": 1107,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "482:4:4",
+                    "src": "482:4:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -689,64 +689,64 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "458:39:4"
+              "src": "458:39:8"
             },
             "returnParameters": {
-              "id": 361,
+              "id": 1112,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "517:0:4"
+              "src": "517:0:8"
             },
-            "scope": 387,
-            "src": "435:195:4",
+            "scope": 1138,
+            "src": "435:195:8",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "body": {
-              "id": 385,
+              "id": 1136,
               "nodeType": "Block",
-              "src": "663:85:4",
+              "src": "663:85:8",
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
                         "baseExpression": {
-                          "id": 377,
+                          "id": 1128,
                           "name": "_trustCallers",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 337,
-                          "src": "681:13:4",
+                          "referencedDeclaration": 1088,
+                          "src": "681:13:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                             "typeString": "mapping(address => bool)"
                           }
                         },
-                        "id": 380,
+                        "id": 1131,
                         "indexExpression": {
                           "expression": {
-                            "id": 378,
+                            "id": 1129,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 4294967281,
-                            "src": "695:3:4",
+                            "src": "695:3:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 379,
+                          "id": 1130,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
-                          "src": "695:10:4",
+                          "src": "695:10:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -757,7 +757,7 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "681:25:4",
+                        "src": "681:25:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -765,14 +765,14 @@
                       },
                       {
                         "hexValue": "43616c6c6572206973206e6f74207472757374",
-                        "id": 381,
+                        "id": 1132,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "708:21:4",
+                        "src": "708:21:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_d62576747f949e939484ebb6527d92945d0400d9a13972ecd5847ab8a6d927c8",
                           "typeString": "literal_string \"Caller is not trust\""
@@ -791,7 +791,7 @@
                           "typeString": "literal_string \"Caller is not trust\""
                         }
                       ],
-                      "id": 376,
+                      "id": 1127,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -799,13 +799,13 @@
                         4294967278
                       ],
                       "referencedDeclaration": 4294967278,
-                      "src": "673:7:4",
+                      "src": "673:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 382,
+                    "id": 1133,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -813,63 +813,63 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "673:57:4",
+                    "src": "673:57:8",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 383,
+                  "id": 1134,
                   "nodeType": "ExpressionStatement",
-                  "src": "673:57:4"
+                  "src": "673:57:8"
                 },
                 {
-                  "id": 384,
+                  "id": 1135,
                   "nodeType": "PlaceholderStatement",
-                  "src": "740:1:4"
+                  "src": "740:1:8"
                 }
               ]
             },
-            "id": 386,
+            "id": 1137,
             "name": "onlyTrustCaller",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 375,
+              "id": 1126,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "660:2:4"
+              "src": "660:2:8"
             },
-            "src": "636:112:4",
+            "src": "636:112:8",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 388,
-        "src": "112:638:4"
+        "scope": 1139,
+        "src": "112:638:8"
       }
     ],
-    "src": "32:718:4"
+    "src": "32:718:8"
   },
   "legacyAST": {
-    "absolutePath": "/Users/tom/workspace/blockchain/mangosweet.finance/bsc-mangosweet-contract/utils/TrustCaller.sol",
+    "absolutePath": "project:/utils/TrustCaller.sol",
     "exportedSymbols": {
       "Context": [
-        1130
+        773
       ],
       "Ownable": [
-        497
+        103
       ],
       "TrustCaller": [
-        387
+        1138
       ]
     },
-    "id": 388,
+    "id": 1139,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 324,
+        "id": 1075,
         "literals": [
           "solidity",
           "^",
@@ -877,16 +877,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "32:23:4"
+        "src": "32:23:8"
       },
       {
         "absolutePath": "@openzeppelin/contracts/access/Ownable.sol",
         "file": "@openzeppelin/contracts/access/Ownable.sol",
-        "id": 325,
+        "id": 1076,
         "nodeType": "ImportDirective",
-        "scope": 388,
-        "sourceUnit": 498,
-        "src": "57:52:4",
+        "scope": 1139,
+        "sourceUnit": 104,
+        "src": "57:52:8",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -895,50 +895,50 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 326,
+              "id": 1077,
               "name": "Ownable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 497,
-              "src": "145:7:4"
+              "referencedDeclaration": 103,
+              "src": "145:7:8"
             },
-            "id": 327,
+            "id": 1078,
             "nodeType": "InheritanceSpecifier",
-            "src": "145:7:4"
+            "src": "145:7:8"
           }
         ],
         "contractDependencies": [
-          497,
-          1130
+          103,
+          773
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 387,
+        "id": 1138,
         "linearizedBaseContracts": [
-          387,
-          497,
-          1130
+          1138,
+          103,
+          773
         ],
         "name": "TrustCaller",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "anonymous": false,
-            "id": 333,
+            "id": 1084,
             "name": "TrustCallerSet",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 332,
+              "id": 1083,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 329,
+                  "id": 1080,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "caller",
                   "nodeType": "VariableDeclaration",
-                  "scope": 333,
-                  "src": "180:14:4",
+                  "scope": 1084,
+                  "src": "180:14:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -946,10 +946,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 328,
+                    "id": 1079,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "180:7:4",
+                    "src": "180:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -960,13 +960,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 331,
+                  "id": 1082,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "isTrusted",
                   "nodeType": "VariableDeclaration",
-                  "scope": 333,
-                  "src": "196:14:4",
+                  "scope": 1084,
+                  "src": "196:14:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -974,10 +974,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 330,
+                    "id": 1081,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "196:4:4",
+                    "src": "196:4:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -986,18 +986,18 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "179:32:4"
+              "src": "179:32:8"
             },
-            "src": "159:53:4"
+            "src": "159:53:8"
           },
           {
             "constant": false,
-            "id": 337,
+            "id": 1088,
             "mutability": "mutable",
             "name": "_trustCallers",
             "nodeType": "VariableDeclaration",
-            "scope": 387,
-            "src": "218:46:4",
+            "scope": 1138,
+            "src": "218:46:8",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1005,28 +1005,28 @@
               "typeString": "mapping(address => bool)"
             },
             "typeName": {
-              "id": 336,
+              "id": 1087,
               "keyType": {
-                "id": 334,
+                "id": 1085,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "226:7:4",
+                "src": "226:7:8",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
               "nodeType": "Mapping",
-              "src": "218:24:4",
+              "src": "218:24:8",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                 "typeString": "mapping(address => bool)"
               },
               "valueType": {
-                "id": 335,
+                "id": 1086,
                 "name": "bool",
                 "nodeType": "ElementaryTypeName",
-                "src": "237:4:4",
+                "src": "237:4:8",
                 "typeDescriptions": {
                   "typeIdentifier": "t_bool",
                   "typeString": "bool"
@@ -1037,63 +1037,63 @@
           },
           {
             "body": {
-              "id": 340,
+              "id": 1091,
               "nodeType": "Block",
-              "src": "285:7:4",
+              "src": "285:7:8",
               "statements": []
             },
-            "id": 341,
+            "id": 1092,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 338,
+              "id": 1089,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "282:2:4"
+              "src": "282:2:8"
             },
             "returnParameters": {
-              "id": 339,
+              "id": 1090,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "285:0:4"
+              "src": "285:0:8"
             },
-            "scope": 387,
-            "src": "271:21:4",
+            "scope": 1138,
+            "src": "271:21:8",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
             "body": {
-              "id": 352,
+              "id": 1103,
               "nodeType": "Block",
-              "src": "375:54:4",
+              "src": "375:54:8",
               "statements": [
                 {
                   "expression": {
                     "baseExpression": {
-                      "id": 348,
+                      "id": 1099,
                       "name": "_trustCallers",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 337,
-                      "src": "392:13:4",
+                      "referencedDeclaration": 1088,
+                      "src": "392:13:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                         "typeString": "mapping(address => bool)"
                       }
                     },
-                    "id": 350,
+                    "id": 1101,
                     "indexExpression": {
-                      "id": 349,
+                      "id": 1100,
                       "name": "contractAddress",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 343,
-                      "src": "406:15:4",
+                      "referencedDeclaration": 1094,
+                      "src": "406:15:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -1104,38 +1104,38 @@
                     "isPure": false,
                     "lValueRequested": false,
                     "nodeType": "IndexAccess",
-                    "src": "392:30:4",
+                    "src": "392:30:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 347,
-                  "id": 351,
+                  "functionReturnParameters": 1098,
+                  "id": 1102,
                   "nodeType": "Return",
-                  "src": "385:37:4"
+                  "src": "385:37:8"
                 }
               ]
             },
             "functionSelector": "f24b890d",
-            "id": 353,
+            "id": 1104,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "isTrustCaller",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 344,
+              "id": 1095,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 343,
+                  "id": 1094,
                   "mutability": "mutable",
                   "name": "contractAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 353,
-                  "src": "321:23:4",
+                  "scope": 1104,
+                  "src": "321:23:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1143,10 +1143,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 342,
+                    "id": 1093,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "321:7:4",
+                    "src": "321:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1156,20 +1156,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "320:25:4"
+              "src": "320:25:8"
             },
             "returnParameters": {
-              "id": 347,
+              "id": 1098,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 346,
+                  "id": 1097,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 353,
-                  "src": "369:4:4",
+                  "scope": 1104,
+                  "src": "369:4:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1177,10 +1177,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 345,
+                    "id": 1096,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "369:4:4",
+                    "src": "369:4:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1189,48 +1189,48 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "368:6:4"
+              "src": "368:6:8"
             },
-            "scope": 387,
-            "src": "298:131:4",
+            "scope": 1138,
+            "src": "298:131:8",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "body": {
-              "id": 373,
+              "id": 1124,
               "nodeType": "Block",
-              "src": "517:113:4",
+              "src": "517:113:8",
               "statements": [
                 {
                   "expression": {
-                    "id": 366,
+                    "id": 1117,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 362,
+                        "id": 1113,
                         "name": "_trustCallers",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 337,
-                        "src": "527:13:4",
+                        "referencedDeclaration": 1088,
+                        "src": "527:13:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                           "typeString": "mapping(address => bool)"
                         }
                       },
-                      "id": 364,
+                      "id": 1115,
                       "indexExpression": {
-                        "id": 363,
+                        "id": 1114,
                         "name": "callerAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 355,
-                        "src": "541:13:4",
+                        "referencedDeclaration": 1106,
+                        "src": "541:13:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -1241,7 +1241,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "527:28:4",
+                      "src": "527:28:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -1250,49 +1250,49 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 365,
+                      "id": 1116,
                       "name": "isTrusted",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 357,
-                      "src": "558:9:4",
+                      "referencedDeclaration": 1108,
+                      "src": "558:9:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "527:40:4",
+                    "src": "527:40:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 367,
+                  "id": 1118,
                   "nodeType": "ExpressionStatement",
-                  "src": "527:40:4"
+                  "src": "527:40:8"
                 },
                 {
                   "eventCall": {
                     "arguments": [
                       {
-                        "id": 369,
+                        "id": 1120,
                         "name": "callerAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 355,
-                        "src": "598:13:4",
+                        "referencedDeclaration": 1106,
+                        "src": "598:13:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         }
                       },
                       {
-                        "id": 370,
+                        "id": 1121,
                         "name": "isTrusted",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 357,
-                        "src": "613:9:4",
+                        "referencedDeclaration": 1108,
+                        "src": "613:9:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1310,18 +1310,18 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 368,
+                      "id": 1119,
                       "name": "TrustCallerSet",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 333,
-                      "src": "583:14:4",
+                      "referencedDeclaration": 1084,
+                      "src": "583:14:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_bool_$returns$__$",
                         "typeString": "function (address,bool)"
                       }
                     },
-                    "id": 371,
+                    "id": 1122,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1329,51 +1329,51 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "583:40:4",
+                    "src": "583:40:8",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 372,
+                  "id": 1123,
                   "nodeType": "EmitStatement",
-                  "src": "578:45:4"
+                  "src": "578:45:8"
                 }
               ]
             },
             "functionSelector": "0b9bf752",
-            "id": 374,
+            "id": 1125,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 360,
+                "id": 1111,
                 "modifierName": {
-                  "id": 359,
+                  "id": 1110,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 446,
-                  "src": "507:9:4"
+                  "referencedDeclaration": 46,
+                  "src": "507:9:8"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "507:9:4"
+                "src": "507:9:8"
               }
             ],
             "name": "setTrustCaller",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 358,
+              "id": 1109,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 355,
+                  "id": 1106,
                   "mutability": "mutable",
                   "name": "callerAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 374,
-                  "src": "459:21:4",
+                  "scope": 1125,
+                  "src": "459:21:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1381,10 +1381,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 354,
+                    "id": 1105,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "459:7:4",
+                    "src": "459:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1395,12 +1395,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 357,
+                  "id": 1108,
                   "mutability": "mutable",
                   "name": "isTrusted",
                   "nodeType": "VariableDeclaration",
-                  "scope": 374,
-                  "src": "482:14:4",
+                  "scope": 1125,
+                  "src": "482:14:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1408,10 +1408,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 356,
+                    "id": 1107,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "482:4:4",
+                    "src": "482:4:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1420,64 +1420,64 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "458:39:4"
+              "src": "458:39:8"
             },
             "returnParameters": {
-              "id": 361,
+              "id": 1112,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "517:0:4"
+              "src": "517:0:8"
             },
-            "scope": 387,
-            "src": "435:195:4",
+            "scope": 1138,
+            "src": "435:195:8",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "body": {
-              "id": 385,
+              "id": 1136,
               "nodeType": "Block",
-              "src": "663:85:4",
+              "src": "663:85:8",
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
                         "baseExpression": {
-                          "id": 377,
+                          "id": 1128,
                           "name": "_trustCallers",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 337,
-                          "src": "681:13:4",
+                          "referencedDeclaration": 1088,
+                          "src": "681:13:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                             "typeString": "mapping(address => bool)"
                           }
                         },
-                        "id": 380,
+                        "id": 1131,
                         "indexExpression": {
                           "expression": {
-                            "id": 378,
+                            "id": 1129,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 4294967281,
-                            "src": "695:3:4",
+                            "src": "695:3:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 379,
+                          "id": 1130,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
-                          "src": "695:10:4",
+                          "src": "695:10:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -1488,7 +1488,7 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "681:25:4",
+                        "src": "681:25:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1496,14 +1496,14 @@
                       },
                       {
                         "hexValue": "43616c6c6572206973206e6f74207472757374",
-                        "id": 381,
+                        "id": 1132,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "708:21:4",
+                        "src": "708:21:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_d62576747f949e939484ebb6527d92945d0400d9a13972ecd5847ab8a6d927c8",
                           "typeString": "literal_string \"Caller is not trust\""
@@ -1522,7 +1522,7 @@
                           "typeString": "literal_string \"Caller is not trust\""
                         }
                       ],
-                      "id": 376,
+                      "id": 1127,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -1530,13 +1530,13 @@
                         4294967278
                       ],
                       "referencedDeclaration": 4294967278,
-                      "src": "673:7:4",
+                      "src": "673:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 382,
+                    "id": 1133,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1544,43 +1544,43 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "673:57:4",
+                    "src": "673:57:8",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 383,
+                  "id": 1134,
                   "nodeType": "ExpressionStatement",
-                  "src": "673:57:4"
+                  "src": "673:57:8"
                 },
                 {
-                  "id": 384,
+                  "id": 1135,
                   "nodeType": "PlaceholderStatement",
-                  "src": "740:1:4"
+                  "src": "740:1:8"
                 }
               ]
             },
-            "id": 386,
+            "id": 1137,
             "name": "onlyTrustCaller",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 375,
+              "id": 1126,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "660:2:4"
+              "src": "660:2:8"
             },
-            "src": "636:112:4",
+            "src": "636:112:8",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 388,
-        "src": "112:638:4"
+        "scope": 1139,
+        "src": "112:638:8"
       }
     ],
-    "src": "32:718:4"
+    "src": "32:718:8"
   },
   "compiler": {
     "name": "solc",
@@ -1588,7 +1588,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-06-23T11:51:20.583Z",
+  "updatedAt": "2021-07-06T14:56:39.661Z",
   "devdoc": {
     "kind": "dev",
     "methods": {
