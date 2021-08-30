@@ -1,30 +1,33 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.4;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
+import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "../utils/TrustCaller.sol";
-import "../utils/SafeMath.sol";
 
-
-contract MangoSweet is ERC20, Ownable, TrustCaller {
-    using SafeMath for uint256;
-    
-    uint256 constant LIMIT_TOTAL_SUPPLY = 8E26;
-
-    constructor(uint256 initialSupply) ERC20("MangoSweet Token", "SWEET") {
-        require(initialSupply <= LIMIT_TOTAL_SUPPLY, "Cannot mint more than limit");
-
-        _mint(msg.sender, initialSupply);
+contract MangoSweetToken is ERC20, ERC20Burnable, Pausable, Ownable {
+    constructor() ERC20("MangoSweet Token", "SWEET") {
+        _mint(msg.sender, 1000000000 * 10 ** decimals());
     }
 
-    function mint(address account, uint256 amount) external onlyTrustCaller {
-        require(totalSupply().add(amount) <= LIMIT_TOTAL_SUPPLY, "Cannot more than limit");
-
-        _mint(account, amount);
+    function pause() public onlyOwner {
+        _pause();
     }
 
-    function burn(uint256 amount) external {
-        _burn(msg.sender, amount);
+    function unpause() public onlyOwner {
+        _unpause();
+    }
+
+    function mint(address to, uint256 amount) public onlyOwner {
+        _mint(to, amount);
+    }
+
+    function _beforeTokenTransfer(address from, address to, uint256 amount)
+        internal
+        whenNotPaused
+        override
+    {
+        super._beforeTokenTransfer(from, to, amount);
     }
 }
