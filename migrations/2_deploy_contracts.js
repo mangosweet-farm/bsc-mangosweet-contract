@@ -1,7 +1,6 @@
 var MangoSweet = artifacts.require("./MangoSweet.sol");
 
-module.exports = function(deployer) {
+module.exports = function (deployer) {
   // Deploy Mangosweet Token
-  deployer.deploy(MangoSweet, 1000);
-
+  deployer.deploy(MangoSweet);
 };
