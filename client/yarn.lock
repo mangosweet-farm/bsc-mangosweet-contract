@@ -8843,6 +8843,21 @@
   "resolved" "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.3.tgz"
   "version" "6.0.3"
 
+"react-fast-compare@^3.1.1":
+  "integrity" "sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA=="
+  "resolved" "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.0.tgz"
+  "version" "3.2.0"
+
+"react-helmet@^6.1.0":
+  "integrity" "sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw=="
+  "resolved" "https://registry.npmjs.org/react-helmet/-/react-helmet-6.1.0.tgz"
+  "version" "6.1.0"
+  dependencies:
+    "object-assign" "^4.1.1"
+    "prop-types" "^15.7.2"
+    "react-fast-compare" "^3.1.1"
+    "react-side-effect" "^2.1.0"
+
 "react-is@^16.8.1", "react-is@^16.8.4":
   "integrity" "sha512-gbBVYR2p8mnriqAwWx9LbuUrShnAuSCNnuPGyc7GJrMVQtPDAh8iLpv7FRuMPFb56KkaVZIYSz1PrjI9q0QPCw=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.11.0.tgz"
@@ -8909,7 +8924,12 @@
   optionalDependencies:
     "fsevents" "2.0.7"
 
-"react@^16.0.0", "react@16.11.0":
+"react-side-effect@^2.1.0":
+  "integrity" "sha512-2FoTQzRNTncBVtnzxFOk2mCpcfxQpenBMbk5kSVBg5UcPqV9fRbgY2zhb7GTWWOlpFmAxhClBDlIq8Rsubz1yQ=="
+  "resolved" "https://registry.npmjs.org/react-side-effect/-/react-side-effect-2.1.1.tgz"
+  "version" "2.1.1"
+
+"react@^16.0.0", "react@^16.3.0 || ^17.0.0", "react@>=16.3.0", "react@16.11.0":
   "integrity" "sha512-M5Y8yITaLmU0ynd0r1Yvfq98Rmll6q8AxaEe88c8e7LxO8fZ2cNgmFt0aGAS9wzf1Ao32NKXtCl+/tVVtkxq6g=="
   "resolved" "https://registry.npmjs.org/react/-/react-16.11.0.tgz"
   "version" "16.11.0"
@@ -9572,6 +9592,7 @@
   "version" "2.0.3"
 
 "scrypt-shim@github:web3-js/scrypt-shim":
+  "integrity" "sha512-PQGxuyPidI88bQMJ/fF2tzwkTF4YzzfhoYQNexgJXNdt+YJd6ceH5ScQa1OJNWbMGOi1PlXbxTaDOdPGckPEHw=="
   "resolved" "git+ssh://git@github.com/web3-js/scrypt-shim.git#be5e616323a8b5e568788bf94d03c1b8410eac54"
   "version" "0.1.0"
   dependencies:
@@ -11347,6 +11368,7 @@
   "version" "0.1.4"
 
 "websocket@github:web3-js/WebSocket-Node#polyfill/globalThis":
+  "integrity" "sha512-t3z6NLuJsNkGiKb3PoOx6p6eMTu7Ljkcwgtveqd4aWXnSZBJHbXljdF6rYSSNUW96Q+ciZW5Vunck0i23wDwWQ=="
   "resolved" "git+ssh://git@github.com/web3-js/WebSocket-Node.git#905deb4812572b344f5801f8c9ce8bb02799d82e"
   "version" "1.0.29"
   dependencies:
