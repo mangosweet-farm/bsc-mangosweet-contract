@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { Helmet } from 'react-helmet'
 import SimpleStorageContract from "./contracts/MangoSweet.json";
 import getWeb3 from "./getWeb3";
+import mangoLogo from "./images/mango.png";
+import telegram from "./images/telegram.png";
+import twitter from "./images/twitter.png";
 
 import "./App.css";
 
@@ -11,6 +14,29 @@ class App extends Component {
   state = { storageValue: 0, web3: null, accounts: null, contract: null };
 
   componentDidMount = async () => {
+    // this.connectWallet();  // Auto connect wallet
+  };
+
+  runExample = async () => {
+    const { accounts, contract } = this.state;
+
+    // Stores a given value, 5 by default.
+    // await contract.methods.set(5).send({ from: accounts[0] });
+
+    // Get the value from the contract to prove it worked.
+    // const response = await contract.methods.get().call();
+
+    // Update state with the result.
+    // this.setState({ storageValue: response });
+  };
+
+  getWalletAddress = async () => {
+    const accounts = this.state.accounts + '';
+    let wallet = accounts.slice(0,7) + '' + accounts.slice(accounts.length - 5, accounts.length - 1);
+    return wallet;
+  }
+
+  connectWallet = async () => {
     try {
       // Get network provider and web3 instance.
       const web3 = await getWeb3();
@@ -37,55 +63,39 @@ class App extends Component {
       );
       console.error(error);
     }
-  };
+  }
 
-  runExample = async () => {
-    const { accounts, contract } = this.state;
-
-    // Stores a given value, 5 by default.
-    // await contract.methods.set(5).send({ from: accounts[0] });
-
-    // Get the value from the contract to prove it worked.
-    // const response = await contract.methods.get().call();
-
-    // Update state with the result.
-    // this.setState({ storageValue: response });
-  };
-
-  getWalletAddress = async () => {
-    const accounts = this.state.accounts + '';
-    let wallet = accounts.slice(0,7) + '' + accounts.slice(accounts.length - 5, accounts.length - 1);
-    return wallet;
+  showWallet() {
+    if (this.state.wallet) {
+      return (
+        <div class="address">Your wallet: {this.state.wallet}</div>
+      )
+    } else {
+      return (
+        <div class="wallet-connect" className="connect-button" onClick={this.connectWallet}>Connect Wallet</div>
+      )
+    }
   }
 
   render() {
-    if (!this.state.web3) {
-      return <div>
-        <Helmet>
-          <title>{ TITLE }</title>
-        </Helmet>
-        Connecting...
-        </div>;
-    }
     return (
       <div>
         <Helmet>
           <title>{ TITLE }</title>
         </Helmet>
         <div class="wallet">
-          <div class="address">Your wallet: {this.state.wallet}</div>
-
+          {this.showWallet()}
         </div>
         <div class="landing">
           <label class="label-header">We’re coming soon</label>
           <div class="mango">
-            <img  src="images/mango.png" />
+            <img  src={mangoLogo} />
           </div>
           <label class="label-domain">MangoSweet.finance</label>
           <label class="label-description">Stay Connected</label>
           <div class="icon-social">
-            <img class="icon" src="images/twitter.png" />
-            <img class="icon" src="images/telegram.png" />
+            <img class="icon" src={twitter} />
+            <img class="icon" src={telegram} />
           </div>
         </div>
       </div>
